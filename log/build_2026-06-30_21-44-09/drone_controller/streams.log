@@ -1,0 +1,27 @@
+[0.115s] Invoking command in '/home/ishank/ros2_ws/build/drone_controller': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_controller -- -j8 -l8
+[0.196s] [35m[1mConsolidate compiler generated dependencies of target executor_node[0m
+[0.242s] [ 66%] [32mBuilding CXX object CMakeFiles/executor_node.dir/src/main.cpp.o[0m
+[0.243s] [ 66%] [32mBuilding CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o[0m
+[11.754s] [100%] [32m[1mLinking CXX executable executor_node[0m
+[12.357s] [100%] Built target executor_node
+[12.390s] Invoked command in '/home/ishank/ros2_ws/build/drone_controller' returned '0': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_controller -- -j8 -l8
+[12.404s] Invoking command in '/home/ishank/ros2_ws/build/drone_controller': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_controller
+[12.410s] -- Install configuration: ""
+[12.411s] -- Execute custom install script
+[12.411s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/lib/drone_controller/executor_node
+[12.412s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/package_run_dependencies/drone_controller
+[12.412s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/parent_prefix_path/drone_controller
+[12.413s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.sh
+[12.413s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.dsv
+[12.413s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.sh
+[12.414s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.dsv
+[12.414s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.bash
+[12.414s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.sh
+[12.415s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.zsh
+[12.415s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.dsv
+[12.415s] -- Symlinking: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.dsv
+[12.424s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/packages/drone_controller
+[12.424s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig.cmake
+[12.424s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig-version.cmake
+[12.425s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.xml
+[12.429s] Invoked command in '/home/ishank/ros2_ws/build/drone_controller' returned '0': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_controller

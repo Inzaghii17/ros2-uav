@@ -1,0 +1,21 @@
+[0.051s] Invoking command in '/home/ishank/ros2_ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_sim -- -j8 -l8
+[0.240s] Invoked command in '/home/ishank/ros2_ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_sim -- -j8 -l8
+[0.265s] Invoking command in '/home/ishank/ros2_ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_sim
+[0.284s] -- Install configuration: ""
+[0.286s] -- Execute custom install script
+[0.286s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/package_run_dependencies/drone_sim
+[0.287s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/parent_prefix_path/drone_sim
+[0.287s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/ament_prefix_path.sh
+[0.287s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/ament_prefix_path.dsv
+[0.288s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/path.sh
+[0.289s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/path.dsv
+[0.290s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.bash
+[0.290s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.sh
+[0.290s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.zsh
+[0.291s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.dsv
+[0.291s] -- Symlinking: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/package.dsv
+[0.321s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/packages/drone_sim
+[0.322s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/cmake/drone_simConfig.cmake
+[0.322s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/cmake/drone_simConfig-version.cmake
+[0.322s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/package.xml
+[0.326s] Invoked command in '/home/ishank/ros2_ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_sim

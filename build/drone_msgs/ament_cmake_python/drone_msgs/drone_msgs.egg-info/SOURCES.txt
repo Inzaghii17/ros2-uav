@@ -4,3 +4,10 @@ drone_msgs.egg-info/PKG-INFO
 drone_msgs.egg-info/SOURCES.txt
 drone_msgs.egg-info/dependency_links.txt
 drone_msgs.egg-info/top_level.txt
+drone_msgs/msg/__init__.py
+drone_msgs/msg/_battery.py
+drone_msgs/msg/_drone_state.py
+drone_msgs/msg/_mission.py
+drone_msgs/msg/_mission_plan.py
+drone_msgs/msg/_primitive.py
+drone_msgs/msg/_primitive_status.py

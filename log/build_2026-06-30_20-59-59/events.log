@@ -1,0 +1,824 @@
+[0.000000] (-) TimerEvent: {}
+[0.000813] (drone_common) JobQueued: {'identifier': 'drone_common', 'dependencies': OrderedDict()}
+[0.000944] (drone_msgs) JobQueued: {'identifier': 'drone_msgs', 'dependencies': OrderedDict()}
+[0.001011] (drone_sim) JobQueued: {'identifier': 'drone_sim', 'dependencies': OrderedDict()}
+[0.001876] (drone_bridge) JobQueued: {'identifier': 'drone_bridge', 'dependencies': OrderedDict([('drone_msgs', '/home/ishank/ros2_ws/install/drone_msgs')])}
+[0.001952] (drone_controller) JobQueued: {'identifier': 'drone_controller', 'dependencies': OrderedDict([('drone_msgs', '/home/ishank/ros2_ws/install/drone_msgs')])}
+[0.002282] (drone_planner) JobQueued: {'identifier': 'drone_planner', 'dependencies': OrderedDict([('drone_msgs', '/home/ishank/ros2_ws/install/drone_msgs')])}
+[0.002406] (mission_manager) JobQueued: {'identifier': 'mission_manager', 'dependencies': OrderedDict([('drone_msgs', '/home/ishank/ros2_ws/install/drone_msgs')])}
+[0.002473] (drone_msgs) JobStarted: {'identifier': 'drone_msgs'}
+[0.030856] (drone_common) JobStarted: {'identifier': 'drone_common'}
+[0.038158] (drone_sim) JobStarted: {'identifier': 'drone_sim'}
+[0.049283] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'cmake'}
+[0.050866] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'build'}
+[0.052686] (drone_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_msgs', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.066811] (drone_common) JobProgress: {'identifier': 'drone_common', 'progress': 'cmake'}
+[0.068754] (drone_common) JobProgress: {'identifier': 'drone_common', 'progress': 'build'}
+[0.070759] (drone_common) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_common', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_common'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.081331] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'cmake'}
+[0.082604] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'build'}
+[0.083467] (drone_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_sim', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_sim'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.099539] (-) TimerEvent: {}
+[0.200283] (-) TimerEvent: {}
+[0.278235] (drone_sim) CommandEnded: {'returncode': 0}
+[0.281214] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'install'}
+[0.288221] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.298956] (drone_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_sim'], 'cwd': '/home/ishank/ros2_ws/build/drone_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_sim'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.303718] (-) TimerEvent: {}
+[0.304490] (drone_common) CommandEnded: {'returncode': 0}
+[0.307850] (drone_common) JobProgress: {'identifier': 'drone_common', 'progress': 'install'}
+[0.310121] (drone_msgs) StdoutLine: {'line': b'[  1%] Built target drone_msgs__rs\n'}
+[0.310582] (drone_common) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_common'], 'cwd': '/home/ishank/ros2_ws/build/drone_common', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_common'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.311507] (drone_msgs) StdoutLine: {'line': b'[  2%] Built target drone_msgs__cpp\n'}
+[0.322505] (drone_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.324075] (drone_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.324569] (drone_msgs) StdoutLine: {'line': b'[ 13%] Built target drone_msgs__rosidl_generator_c\n'}
+[0.324958] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/package_run_dependencies/drone_sim\n'}
+[0.325256] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/parent_prefix_path/drone_sim\n'}
+[0.325575] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/ament_prefix_path.sh\n'}
+[0.326080] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/ament_prefix_path.dsv\n'}
+[0.326635] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/path.sh\n'}
+[0.327614] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/environment/path.dsv\n'}
+[0.328185] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.bash\n'}
+[0.328616] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.sh\n'}
+[0.328919] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.zsh\n'}
+[0.329265] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/local_setup.dsv\n'}
+[0.329665] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/package.dsv\n'}
+[0.334389] (drone_msgs) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_symlink_drone_msgs\n'}
+[0.334879] (drone_common) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.336455] (drone_common) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.339618] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/include/drone_common/battery_cost.hpp\n'}
+[0.347365] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/ament_index/resource_index/package_run_dependencies/drone_common\n'}
+[0.347817] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.348047] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.348210] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.349539] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/ament_index/resource_index/parent_prefix_path/drone_common\n'}
+[0.349764] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/environment/ament_prefix_path.sh\n'}
+[0.349941] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/environment/ament_prefix_path.dsv\n'}
+[0.350089] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/environment/path.sh\n'}
+[0.350661] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/environment/path.dsv\n'}
+[0.355029] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/local_setup.bash\n'}
+[0.355467] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/local_setup.sh\n'}
+[0.355662] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/local_setup.zsh\n'}
+[0.355825] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/local_setup.dsv\n'}
+[0.355980] (drone_common) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_common/share/drone_common/package.dsv\n'}
+[0.359730] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/ament_index/resource_index/packages/drone_sim\n'}
+[0.360121] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/cmake/drone_simConfig.cmake\n'}
+[0.360739] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/cmake/drone_simConfig-version.cmake\n'}
+[0.361046] (drone_sim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_sim/share/drone_sim/package.xml\n'}
+[0.364529] (drone_sim) CommandEnded: {'returncode': 0}
+[0.365713] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.368062] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.374162] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[0.376972] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/ament_index/resource_index/packages/drone_common\n'}
+[0.377833] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.379489] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/cmake/drone_commonConfig.cmake\n'}
+[0.379899] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/cmake/drone_commonConfig-version.cmake\n'}
+[0.380264] (drone_common) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_common/share/drone_common/package.xml\n'}
+[0.402443] (drone_msgs) StdoutLine: {'line': b'[ 25%] Built target drone_msgs__rosidl_typesupport_cpp\n'}
+[0.403028] (drone_msgs) StdoutLine: {'line': b'[ 36%] Built target drone_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.404613] (-) TimerEvent: {}
+[0.407977] (drone_msgs) StdoutLine: {'line': b'[ 47%] Built target drone_msgs__rosidl_typesupport_introspection_c\n'}
+[0.408162] (drone_msgs) StdoutLine: {'line': b'[ 58%] Built target drone_msgs__rosidl_typesupport_c\n'}
+[0.408263] (drone_msgs) StdoutLine: {'line': b'[ 70%] Built target drone_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.408348] (drone_msgs) StdoutLine: {'line': b'[ 80%] Built target drone_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.437776] (drone_sim) JobEnded: {'identifier': 'drone_sim', 'rc': 0}
+[0.441311] (drone_common) CommandEnded: {'returncode': 0}
+[0.451208] (drone_msgs) StdoutLine: {'line': b'[ 80%] Built target drone_msgs\n'}
+[0.471817] (drone_common) JobEnded: {'identifier': 'drone_common', 'rc': 0}
+[0.501596] (drone_msgs) StdoutLine: {'line': b'[ 81%] Built target drone_msgs__py\n'}
+[0.505274] (-) TimerEvent: {}
+[0.528709] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_generator_py\x1b[0m\n'}
+[0.566540] (drone_msgs) StdoutLine: {'line': b'[ 91%] Built target drone_msgs__rosidl_generator_py\n'}
+[0.584479] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.586130] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.590369] (drone_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target drone_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.605481] (-) TimerEvent: {}
+[0.612646] (drone_msgs) StdoutLine: {'line': b'[ 94%] Built target drone_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.617665] (drone_msgs) StdoutLine: {'line': b'[ 97%] Built target drone_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.620703] (drone_msgs) StdoutLine: {'line': b'[100%] Built target drone_msgs__rosidl_typesupport_c__pyext\n'}
+[0.705514] (-) TimerEvent: {}
+[0.806061] (-) TimerEvent: {}
+[0.907202] (-) TimerEvent: {}
+[1.008117] (-) TimerEvent: {}
+[1.073766] (drone_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.077138] (drone_msgs) StdoutLine: {'line': b'writing drone_msgs.egg-info/PKG-INFO\n'}
+[1.078529] (drone_msgs) StdoutLine: {'line': b'writing dependency_links to drone_msgs.egg-info/dependency_links.txt\n'}
+[1.080219] (drone_msgs) StdoutLine: {'line': b'writing top-level names to drone_msgs.egg-info/top_level.txt\n'}
+[1.093380] (drone_msgs) StdoutLine: {'line': b"reading manifest file 'drone_msgs.egg-info/SOURCES.txt'\n"}
+[1.095880] (drone_msgs) StdoutLine: {'line': b"writing manifest file 'drone_msgs.egg-info/SOURCES.txt'\n"}
+[1.108399] (-) TimerEvent: {}
+[1.209398] (-) TimerEvent: {}
+[1.211952] (drone_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_drone_msgs_egg\n'}
+[1.267294] (drone_msgs) CommandEnded: {'returncode': 0}
+[1.273900] (drone_msgs) JobProgress: {'identifier': 'drone_msgs', 'progress': 'install'}
+[1.279281] (drone_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_msgs'], 'cwd': '/home/ishank/ros2_ws/build/drone_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.309765] (-) TimerEvent: {}
+[1.311235] (drone_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.314573] (drone_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.316317] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/ament_index/resource_index/rosidl_interfaces/drone_msgs\n'}
+[1.319069] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/battery.h\n'}
+[1.320725] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__functions.h\n'}
+[1.321701] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__struct.h\n'}
+[1.323514] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__type_support.h\n'}
+[1.324732] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__functions.h\n'}
+[1.325527] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__struct.h\n'}
+[1.325792] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__type_support.h\n'}
+[1.326800] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__functions.h\n'}
+[1.328173] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__struct.h\n'}
+[1.328989] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__type_support.h\n'}
+[1.329991] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__functions.h\n'}
+[1.331663] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__struct.h\n'}
+[1.332457] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__type_support.h\n'}
+[1.333375] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__functions.h\n'}
+[1.335058] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__struct.h\n'}
+[1.335987] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__type_support.h\n'}
+[1.336564] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__functions.h\n'}
+[1.337715] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__struct.h\n'}
+[1.338275] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__type_support.h\n'}
+[1.339760] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/drone_state.h\n'}
+[1.340468] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/mission.h\n'}
+[1.341194] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/mission_plan.h\n'}
+[1.341412] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/primitive.h\n'}
+[1.341705] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/primitive_status.h\n'}
+[1.342481] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.343267] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/library_path.sh\n'}
+[1.343696] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/library_path.dsv\n'}
+[1.344850] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__rosidl_typesupport_fastrtps_c.h\n'}
+[1.346554] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.347301] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__rosidl_typesupport_fastrtps_c.h\n'}
+[1.347976] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__rosidl_typesupport_fastrtps_c.h\n'}
+[1.348222] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__rosidl_typesupport_fastrtps_c.h\n'}
+[1.348343] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__rosidl_typesupport_fastrtps_c.h\n'}
+[1.348744] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.349741] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__rosidl_typesupport_introspection_c.h\n'}
+[1.350232] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_c.h\n'}
+[1.350556] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__rosidl_typesupport_introspection_c.h\n'}
+[1.351965] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__rosidl_typesupport_introspection_c.h\n'}
+[1.352571] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__rosidl_typesupport_introspection_c.h\n'}
+[1.353157] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__rosidl_typesupport_introspection_c.h\n'}
+[1.353298] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.353807] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/battery.hpp\n'}
+[1.354614] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__builder.hpp\n'}
+[1.355246] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__struct.hpp\n'}
+[1.355744] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__traits.hpp\n'}
+[1.356075] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__type_support.hpp\n'}
+[1.356388] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__builder.hpp\n'}
+[1.357039] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__struct.hpp\n'}
+[1.357439] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__traits.hpp\n'}
+[1.357943] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__type_support.hpp\n'}
+[1.358903] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__builder.hpp\n'}
+[1.359488] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__struct.hpp\n'}
+[1.359726] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__traits.hpp\n'}
+[1.360325] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__type_support.hpp\n'}
+[1.360784] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__builder.hpp\n'}
+[1.361317] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__struct.hpp\n'}
+[1.361713] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__traits.hpp\n'}
+[1.362335] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__type_support.hpp\n'}
+[1.362599] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__builder.hpp\n'}
+[1.362863] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__struct.hpp\n'}
+[1.363099] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__traits.hpp\n'}
+[1.363662] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__type_support.hpp\n'}
+[1.363833] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__builder.hpp\n'}
+[1.363972] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__struct.hpp\n'}
+[1.364481] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__traits.hpp\n'}
+[1.365040] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__type_support.hpp\n'}
+[1.365417] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/drone_state.hpp\n'}
+[1.366012] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/mission.hpp\n'}
+[1.366164] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/mission_plan.hpp\n'}
+[1.366285] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/primitive.hpp\n'}
+[1.366530] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/primitive_status.hpp\n'}
+[1.366805] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.367096] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.367660] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.368043] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.368752] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.368988] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.369121] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.369273] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.369700] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/battery__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.370286] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.371042] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.371514] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/mission_plan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.371738] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.372337] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.372539] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/pythonpath.sh\n'}
+[1.372657] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/pythonpath.dsv\n'}
+[1.373183] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.373324] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.373713] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.374874] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.376383] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/__init__.py\n'}
+[1.377153] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.377922] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.379251] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.379848] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.380309] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.380446] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.380861] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/libdrone_msgs__rosidl_generator_py.so\n'}
+[1.381441] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/__init__.py\n'}
+[1.381599] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_battery.py\n'}
+[1.382195] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_battery_s.c\n'}
+[1.382588] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_drone_state.py\n'}
+[1.383006] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_drone_state_s.c\n'}
+[1.383588] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_mission.py\n'}
+[1.384284] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_mission_plan.py\n'}
+[1.384608] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_mission_plan_s.c\n'}
+[1.385011] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_mission_s.c\n'}
+[1.385290] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_primitive.py\n'}
+[1.385736] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_primitive_s.c\n'}
+[1.386087] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_primitive_status.py\n'}
+[1.386578] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg/_primitive_status_s.c\n'}
+[1.386904] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.387171] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.387367] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/drone_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.387488] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/ament_index/resource_index/rust_packages/drone_msgs\n'}
+[1.387995] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/rust/Cargo.toml\n'}
+[1.388180] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/rust/build.rs\n'}
+[1.388504] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/rust/src/lib.rs\n'}
+[1.389213] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/rust/src/msg.rs\n'}
+[1.389880] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/rust/src/msg/rmw.rs\n'}
+[1.390528] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/DroneState.idl\n'}
+[1.391001] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Primitive.idl\n'}
+[1.391155] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Mission.idl\n'}
+[1.391660] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/MissionPlan.idl\n'}
+[1.392351] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/PrimitiveStatus.idl\n'}
+[1.392971] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Battery.idl\n'}
+[1.394182] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/DroneState.msg\n'}
+[1.394564] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Primitive.msg\n'}
+[1.395239] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Mission.msg\n'}
+[1.395710] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/MissionPlan.msg\n'}
+[1.396039] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/PrimitiveStatus.msg\n'}
+[1.396621] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/msg/Battery.msg\n'}
+[1.397071] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/ament_index/resource_index/package_run_dependencies/drone_msgs\n'}
+[1.397355] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/ament_index/resource_index/parent_prefix_path/drone_msgs\n'}
+[1.397974] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/ament_prefix_path.sh\n'}
+[1.398152] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/ament_prefix_path.dsv\n'}
+[1.398615] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/path.sh\n'}
+[1.399157] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/environment/path.dsv\n'}
+[1.399679] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/local_setup.bash\n'}
+[1.400205] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/local_setup.sh\n'}
+[1.400767] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/local_setup.zsh\n'}
+[1.401358] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/local_setup.dsv\n'}
+[1.401773] (drone_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/package.dsv\n'}
+[1.409955] (-) TimerEvent: {}
+[1.434237] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/ament_index/resource_index/packages/drone_msgs\n'}
+[1.435154] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.435802] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.436234] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.436709] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.437159] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.437657] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.438237] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.439035] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgsConfig.cmake\n'}
+[1.439615] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgsConfig-version.cmake\n'}
+[1.440016] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/package.xml\n'}
+[1.441147] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_c.so\n'}
+[1.441880] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.442612] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.443264] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_c.so\n'}
+[1.444000] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.444548] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.445342] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_typesupport_cpp.so\n'}
+[1.510192] (-) TimerEvent: {}
+[1.518904] (drone_msgs) StdoutLine: {'line': b"Listing '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs'...\n"}
+[1.519579] (drone_msgs) StdoutLine: {'line': b"Listing '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages/drone_msgs/msg'...\n"}
+[1.530579] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/lib/libdrone_msgs__rosidl_generator_py.so\n'}
+[1.531814] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cExport.cmake\n'}
+[1.532855] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.533299] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.535180] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.536068] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.536947] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.538235] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.538792] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.539367] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.539807] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.540114] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.540417] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.540742] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.541785] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.543230] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/drone_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.543888] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.544811] (drone_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake/export_drone_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.549841] (drone_msgs) CommandEnded: {'returncode': 0}
+[1.610545] (-) TimerEvent: {}
+[1.669405] (drone_msgs) JobEnded: {'identifier': 'drone_msgs', 'rc': 0}
+[1.675904] (drone_bridge) JobStarted: {'identifier': 'drone_bridge'}
+[1.696541] (drone_controller) JobStarted: {'identifier': 'drone_controller'}
+[1.711167] (-) TimerEvent: {}
+[1.724220] (drone_planner) JobStarted: {'identifier': 'drone_planner'}
+[1.752935] (mission_manager) JobStarted: {'identifier': 'mission_manager'}
+[1.811370] (-) TimerEvent: {}
+[1.877371] (drone_bridge) JobProgress: {'identifier': 'drone_bridge', 'progress': 'cmake'}
+[1.879527] (drone_bridge) JobProgress: {'identifier': 'drone_bridge', 'progress': 'build'}
+[1.880470] (drone_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_bridge', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_bridge'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.884451] (drone_controller) JobProgress: {'identifier': 'drone_controller', 'progress': 'cmake'}
+[1.885465] (drone_controller) JobProgress: {'identifier': 'drone_controller', 'progress': 'build'}
+[1.887102] (drone_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_controller', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.900776] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'cmake'}
+[1.901852] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'build'}
+[1.903288] (drone_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/drone_planner', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/drone_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_planner'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.908591] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'cmake'}
+[1.909249] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'build'}
+[1.911919] (-) TimerEvent: {}
+[1.914771] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ishank/ros2_ws/build/mission_manager', '--', '-j8', '-l8'], 'cwd': '/home/ishank/ros2_ws/build/mission_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/mission_manager'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.943857] (drone_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.961092] (drone_bridge) CommandEnded: {'returncode': 0}
+[1.962967] (drone_bridge) JobProgress: {'identifier': 'drone_bridge', 'progress': 'install'}
+[1.964620] (drone_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_bridge'], 'cwd': '/home/ishank/ros2_ws/build/drone_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_bridge'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.979546] (drone_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.981204] (drone_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.981700] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/package_run_dependencies/drone_bridge\n'}
+[1.982139] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/parent_prefix_path/drone_bridge\n'}
+[1.982710] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.sh\n'}
+[1.983238] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.dsv\n'}
+[1.983674] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.sh\n'}
+[1.984446] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.dsv\n'}
+[1.985118] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.bash\n'}
+[1.986425] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.sh\n'}
+[1.987419] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.zsh\n'}
+[1.989426] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.dsv\n'}
+[1.989968] (drone_bridge) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.dsv\n'}
+[1.990242] (drone_planner) CommandEnded: {'returncode': 0}
+[1.991716] (drone_planner) JobProgress: {'identifier': 'drone_planner', 'progress': 'install'}
+[1.993421] (drone_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_planner'], 'cwd': '/home/ishank/ros2_ws/build/drone_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_planner'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[1.997512] (mission_manager) CommandEnded: {'returncode': 0}
+[1.998960] (mission_manager) JobProgress: {'identifier': 'mission_manager', 'progress': 'install'}
+[2.001705] (mission_manager) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/mission_manager'], 'cwd': '/home/ishank/ros2_ws/build/mission_manager', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/mission_manager'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[2.004874] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/packages/drone_bridge\n'}
+[2.005416] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig.cmake\n'}
+[2.005857] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig-version.cmake\n'}
+[2.006385] (drone_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.xml\n'}
+[2.007205] (drone_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.008736] (drone_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.009525] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/ament_index/resource_index/package_run_dependencies/drone_planner\n'}
+[2.011787] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/ament_index/resource_index/parent_prefix_path/drone_planner\n'}
+[2.013289] (-) TimerEvent: {}
+[2.014993] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/environment/ament_prefix_path.sh\n'}
+[2.015332] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/environment/ament_prefix_path.dsv\n'}
+[2.016685] (drone_bridge) CommandEnded: {'returncode': 0}
+[2.017960] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/environment/path.sh\n'}
+[2.019401] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/environment/path.dsv\n'}
+[2.021068] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/local_setup.bash\n'}
+[2.022237] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/local_setup.sh\n'}
+[2.023777] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/local_setup.zsh\n'}
+[2.024752] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/local_setup.dsv\n'}
+[2.026000] (drone_planner) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/package.dsv\n'}
+[2.026768] (mission_manager) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.028367] (mission_manager) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.029444] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/ament_index/resource_index/package_run_dependencies/mission_manager\n'}
+[2.033049] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/ament_index/resource_index/parent_prefix_path/mission_manager\n'}
+[2.035539] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.sh\n'}
+[2.036849] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/environment/ament_prefix_path.dsv\n'}
+[2.039514] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/environment/path.sh\n'}
+[2.040197] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/environment/path.dsv\n'}
+[2.040937] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/local_setup.bash\n'}
+[2.042266] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/local_setup.sh\n'}
+[2.042915] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/local_setup.zsh\n'}
+[2.044440] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/local_setup.dsv\n'}
+[2.045197] (mission_manager) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/package.dsv\n'}
+[2.045863] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/ament_index/resource_index/packages/drone_planner\n'}
+[2.048582] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig.cmake\n'}
+[2.049187] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/cmake/drone_plannerConfig-version.cmake\n'}
+[2.050276] (drone_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_planner/share/drone_planner/package.xml\n'}
+[2.050857] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/ament_index/resource_index/packages/mission_manager\n'}
+[2.051505] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig.cmake\n'}
+[2.053266] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/cmake/mission_managerConfig-version.cmake\n'}
+[2.055322] (mission_manager) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/mission_manager/share/mission_manager/package.xml\n'}
+[2.069146] (drone_bridge) JobEnded: {'identifier': 'drone_bridge', 'rc': 0}
+[2.072491] (drone_planner) CommandEnded: {'returncode': 0}
+[2.106922] (drone_planner) JobEnded: {'identifier': 'drone_planner', 'rc': 0}
+[2.110074] (mission_manager) CommandEnded: {'returncode': 0}
+[2.113455] (-) TimerEvent: {}
+[2.137270] (mission_manager) JobEnded: {'identifier': 'mission_manager', 'rc': 0}
+[2.213725] (-) TimerEvent: {}
+[2.225855] (drone_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.314031] (-) TimerEvent: {}
+[2.318445] (drone_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.414274] (-) TimerEvent: {}
+[2.515282] (-) TimerEvent: {}
+[2.616207] (-) TimerEvent: {}
+[2.717168] (-) TimerEvent: {}
+[2.818389] (-) TimerEvent: {}
+[2.919435] (-) TimerEvent: {}
+[3.020266] (-) TimerEvent: {}
+[3.121122] (-) TimerEvent: {}
+[3.222061] (-) TimerEvent: {}
+[3.229092] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.250793] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.299804] (drone_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.322352] (-) TimerEvent: {}
+[3.372707] (drone_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.422648] (-) TimerEvent: {}
+[3.458306] (drone_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.522888] (-) TimerEvent: {}
+[3.623911] (-) TimerEvent: {}
+[3.693014] (drone_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.706583] (drone_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.724375] (-) TimerEvent: {}
+[3.825235] (-) TimerEvent: {}
+[3.926171] (-) TimerEvent: {}
+[4.027620] (-) TimerEvent: {}
+[4.128553] (-) TimerEvent: {}
+[4.229582] (-) TimerEvent: {}
+[4.330764] (-) TimerEvent: {}
+[4.431194] (-) TimerEvent: {}
+[4.531624] (-) TimerEvent: {}
+[4.631992] (-) TimerEvent: {}
+[4.732371] (-) TimerEvent: {}
+[4.832776] (-) TimerEvent: {}
+[4.933157] (-) TimerEvent: {}
+[5.033594] (-) TimerEvent: {}
+[5.134021] (-) TimerEvent: {}
+[5.234400] (-) TimerEvent: {}
+[5.334902] (-) TimerEvent: {}
+[5.435249] (-) TimerEvent: {}
+[5.535645] (-) TimerEvent: {}
+[5.636045] (-) TimerEvent: {}
+[5.736407] (-) TimerEvent: {}
+[5.836857] (-) TimerEvent: {}
+[5.937270] (-) TimerEvent: {}
+[6.037889] (-) TimerEvent: {}
+[6.138297] (-) TimerEvent: {}
+[6.238753] (-) TimerEvent: {}
+[6.339123] (-) TimerEvent: {}
+[6.439458] (-) TimerEvent: {}
+[6.539863] (-) TimerEvent: {}
+[6.640288] (-) TimerEvent: {}
+[6.740634] (-) TimerEvent: {}
+[6.841005] (-) TimerEvent: {}
+[6.941374] (-) TimerEvent: {}
+[7.041765] (-) TimerEvent: {}
+[7.142183] (-) TimerEvent: {}
+[7.242579] (-) TimerEvent: {}
+[7.343044] (-) TimerEvent: {}
+[7.443491] (-) TimerEvent: {}
+[7.543921] (-) TimerEvent: {}
+[7.644394] (-) TimerEvent: {}
+[7.744835] (-) TimerEvent: {}
+[7.845224] (-) TimerEvent: {}
+[7.945631] (-) TimerEvent: {}
+[8.046122] (-) TimerEvent: {}
+[8.146519] (-) TimerEvent: {}
+[8.246990] (-) TimerEvent: {}
+[8.347392] (-) TimerEvent: {}
+[8.447769] (-) TimerEvent: {}
+[8.548181] (-) TimerEvent: {}
+[8.648642] (-) TimerEvent: {}
+[8.749087] (-) TimerEvent: {}
+[8.849515] (-) TimerEvent: {}
+[8.949938] (-) TimerEvent: {}
+[9.050310] (-) TimerEvent: {}
+[9.150774] (-) TimerEvent: {}
+[9.251198] (-) TimerEvent: {}
+[9.351710] (-) TimerEvent: {}
+[9.452107] (-) TimerEvent: {}
+[9.552552] (-) TimerEvent: {}
+[9.652961] (-) TimerEvent: {}
+[9.753382] (-) TimerEvent: {}
+[9.853918] (-) TimerEvent: {}
+[9.954339] (-) TimerEvent: {}
+[10.054790] (-) TimerEvent: {}
+[10.155230] (-) TimerEvent: {}
+[10.255564] (-) TimerEvent: {}
+[10.355941] (-) TimerEvent: {}
+[10.456394] (-) TimerEvent: {}
+[10.556778] (-) TimerEvent: {}
+[10.657229] (-) TimerEvent: {}
+[10.757660] (-) TimerEvent: {}
+[10.834968] (drone_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.857855] (-) TimerEvent: {}
+[10.958447] (-) TimerEvent: {}
+[11.059262] (-) TimerEvent: {}
+[11.080603] (drone_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[11.137743] (drone_controller) StdoutLine: {'line': b'-- Found drone_msgs: 0.0.0 (/home/ishank/ros2_ws/install/drone_msgs/share/drone_msgs/cmake)\n'}
+[11.159481] (-) TimerEvent: {}
+[11.184517] (drone_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[11.259710] (-) TimerEvent: {}
+[11.360420] (-) TimerEvent: {}
+[11.419157] (drone_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.419883] (drone_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ishank/ros2_ws/src/drone_controller/include\n'}
+[11.420157] (drone_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.426165] (drone_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.429544] (drone_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[11.429920] (drone_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[11.433925] (drone_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.439268] (drone_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.460638] (-) TimerEvent: {}
+[11.470420] (drone_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[11.487795] (drone_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ishank/ros2_ws/build/drone_controller\n'}
+[11.560818] (-) TimerEvent: {}
+[11.579611] (drone_controller) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/executor_node.dir/src/main.cpp.o\x1b[0m\n'}
+[11.583614] (drone_controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o\x1b[0m\n'}
+[11.661108] (-) TimerEvent: {}
+[11.761993] (-) TimerEvent: {}
+[11.862838] (-) TimerEvent: {}
+[11.963554] (-) TimerEvent: {}
+[12.064144] (-) TimerEvent: {}
+[12.164908] (-) TimerEvent: {}
+[12.265699] (-) TimerEvent: {}
+[12.366531] (-) TimerEvent: {}
+[12.467482] (-) TimerEvent: {}
+[12.568336] (-) TimerEvent: {}
+[12.669407] (-) TimerEvent: {}
+[12.770573] (-) TimerEvent: {}
+[12.871502] (-) TimerEvent: {}
+[12.972418] (-) TimerEvent: {}
+[13.073262] (-) TimerEvent: {}
+[13.174297] (-) TimerEvent: {}
+[13.275292] (-) TimerEvent: {}
+[13.376101] (-) TimerEvent: {}
+[13.477083] (-) TimerEvent: {}
+[13.578001] (-) TimerEvent: {}
+[13.678828] (-) TimerEvent: {}
+[13.779748] (-) TimerEvent: {}
+[13.880463] (-) TimerEvent: {}
+[13.981239] (-) TimerEvent: {}
+[14.082157] (-) TimerEvent: {}
+[14.183234] (-) TimerEvent: {}
+[14.284302] (-) TimerEvent: {}
+[14.385376] (-) TimerEvent: {}
+[14.485981] (-) TimerEvent: {}
+[14.587201] (-) TimerEvent: {}
+[14.688041] (-) TimerEvent: {}
+[14.788960] (-) TimerEvent: {}
+[14.889721] (-) TimerEvent: {}
+[14.990203] (-) TimerEvent: {}
+[15.090778] (-) TimerEvent: {}
+[15.191431] (-) TimerEvent: {}
+[15.291987] (-) TimerEvent: {}
+[15.392525] (-) TimerEvent: {}
+[15.493145] (-) TimerEvent: {}
+[15.593698] (-) TimerEvent: {}
+[15.694218] (-) TimerEvent: {}
+[15.794810] (-) TimerEvent: {}
+[15.895559] (-) TimerEvent: {}
+[15.996064] (-) TimerEvent: {}
+[16.096564] (-) TimerEvent: {}
+[16.197047] (-) TimerEvent: {}
+[16.297676] (-) TimerEvent: {}
+[16.398238] (-) TimerEvent: {}
+[16.498820] (-) TimerEvent: {}
+[16.599466] (-) TimerEvent: {}
+[16.700101] (-) TimerEvent: {}
+[16.800689] (-) TimerEvent: {}
+[16.901258] (-) TimerEvent: {}
+[17.001880] (-) TimerEvent: {}
+[17.102489] (-) TimerEvent: {}
+[17.203190] (-) TimerEvent: {}
+[17.303676] (-) TimerEvent: {}
+[17.404161] (-) TimerEvent: {}
+[17.504777] (-) TimerEvent: {}
+[17.605565] (-) TimerEvent: {}
+[17.706058] (-) TimerEvent: {}
+[17.806776] (-) TimerEvent: {}
+[17.907358] (-) TimerEvent: {}
+[18.007999] (-) TimerEvent: {}
+[18.108575] (-) TimerEvent: {}
+[18.209195] (-) TimerEvent: {}
+[18.309941] (-) TimerEvent: {}
+[18.416356] (-) TimerEvent: {}
+[18.516939] (-) TimerEvent: {}
+[18.617554] (-) TimerEvent: {}
+[18.718136] (-) TimerEvent: {}
+[18.818657] (-) TimerEvent: {}
+[18.919322] (-) TimerEvent: {}
+[19.019858] (-) TimerEvent: {}
+[19.120667] (-) TimerEvent: {}
+[19.221241] (-) TimerEvent: {}
+[19.321960] (-) TimerEvent: {}
+[19.422858] (-) TimerEvent: {}
+[19.523811] (-) TimerEvent: {}
+[19.624823] (-) TimerEvent: {}
+[19.725675] (-) TimerEvent: {}
+[19.826520] (-) TimerEvent: {}
+[19.927400] (-) TimerEvent: {}
+[20.028152] (-) TimerEvent: {}
+[20.128754] (-) TimerEvent: {}
+[20.229443] (-) TimerEvent: {}
+[20.330165] (-) TimerEvent: {}
+[20.430916] (-) TimerEvent: {}
+[20.531482] (-) TimerEvent: {}
+[20.632064] (-) TimerEvent: {}
+[20.732645] (-) TimerEvent: {}
+[20.833327] (-) TimerEvent: {}
+[20.934044] (-) TimerEvent: {}
+[21.035026] (-) TimerEvent: {}
+[21.136086] (-) TimerEvent: {}
+[21.236963] (-) TimerEvent: {}
+[21.337869] (-) TimerEvent: {}
+[21.438872] (-) TimerEvent: {}
+[21.539708] (-) TimerEvent: {}
+[21.640586] (-) TimerEvent: {}
+[21.741485] (-) TimerEvent: {}
+[21.842113] (-) TimerEvent: {}
+[21.942644] (-) TimerEvent: {}
+[22.043235] (-) TimerEvent: {}
+[22.143902] (-) TimerEvent: {}
+[22.244732] (-) TimerEvent: {}
+[22.345682] (-) TimerEvent: {}
+[22.446525] (-) TimerEvent: {}
+[22.547525] (-) TimerEvent: {}
+[22.648283] (-) TimerEvent: {}
+[22.748858] (-) TimerEvent: {}
+[22.849358] (-) TimerEvent: {}
+[22.950295] (-) TimerEvent: {}
+[23.051343] (-) TimerEvent: {}
+[23.152445] (-) TimerEvent: {}
+[23.253352] (-) TimerEvent: {}
+[23.354469] (-) TimerEvent: {}
+[23.455700] (-) TimerEvent: {}
+[23.556721] (-) TimerEvent: {}
+[23.657304] (-) TimerEvent: {}
+[23.758264] (-) TimerEvent: {}
+[23.858800] (-) TimerEvent: {}
+[23.959280] (-) TimerEvent: {}
+[24.059764] (-) TimerEvent: {}
+[24.160507] (-) TimerEvent: {}
+[24.261203] (-) TimerEvent: {}
+[24.362057] (-) TimerEvent: {}
+[24.463094] (-) TimerEvent: {}
+[24.563572] (-) TimerEvent: {}
+[24.663987] (-) TimerEvent: {}
+[24.764402] (-) TimerEvent: {}
+[24.864816] (-) TimerEvent: {}
+[24.965339] (-) TimerEvent: {}
+[25.065993] (-) TimerEvent: {}
+[25.166803] (-) TimerEvent: {}
+[25.267383] (-) TimerEvent: {}
+[25.368003] (-) TimerEvent: {}
+[25.468520] (-) TimerEvent: {}
+[25.569158] (-) TimerEvent: {}
+[25.669771] (-) TimerEvent: {}
+[25.770275] (-) TimerEvent: {}
+[25.870787] (-) TimerEvent: {}
+[25.971325] (-) TimerEvent: {}
+[26.071873] (-) TimerEvent: {}
+[26.172490] (-) TimerEvent: {}
+[26.272993] (-) TimerEvent: {}
+[26.373632] (-) TimerEvent: {}
+[26.474299] (-) TimerEvent: {}
+[26.574769] (-) TimerEvent: {}
+[26.675486] (-) TimerEvent: {}
+[26.775943] (-) TimerEvent: {}
+[26.876494] (-) TimerEvent: {}
+[26.977074] (-) TimerEvent: {}
+[27.077641] (-) TimerEvent: {}
+[27.178227] (-) TimerEvent: {}
+[27.278956] (-) TimerEvent: {}
+[27.379848] (-) TimerEvent: {}
+[27.480737] (-) TimerEvent: {}
+[27.581641] (-) TimerEvent: {}
+[27.683473] (-) TimerEvent: {}
+[27.784655] (-) TimerEvent: {}
+[27.885522] (-) TimerEvent: {}
+[27.986256] (-) TimerEvent: {}
+[28.087158] (-) TimerEvent: {}
+[28.188280] (-) TimerEvent: {}
+[28.289126] (-) TimerEvent: {}
+[28.390531] (-) TimerEvent: {}
+[28.491407] (-) TimerEvent: {}
+[28.592290] (-) TimerEvent: {}
+[28.693112] (-) TimerEvent: {}
+[28.794010] (-) TimerEvent: {}
+[28.895851] (-) TimerEvent: {}
+[28.997048] (-) TimerEvent: {}
+[29.098466] (-) TimerEvent: {}
+[29.199161] (-) TimerEvent: {}
+[29.300021] (-) TimerEvent: {}
+[29.400825] (-) TimerEvent: {}
+[29.501709] (-) TimerEvent: {}
+[29.602555] (-) TimerEvent: {}
+[29.703087] (-) TimerEvent: {}
+[29.803613] (-) TimerEvent: {}
+[29.904324] (-) TimerEvent: {}
+[30.005327] (-) TimerEvent: {}
+[30.106245] (-) TimerEvent: {}
+[30.206763] (-) TimerEvent: {}
+[30.307391] (-) TimerEvent: {}
+[30.407890] (-) TimerEvent: {}
+[30.508290] (-) TimerEvent: {}
+[30.608750] (-) TimerEvent: {}
+[30.709318] (-) TimerEvent: {}
+[30.810122] (-) TimerEvent: {}
+[30.911033] (-) TimerEvent: {}
+[31.011679] (-) TimerEvent: {}
+[31.112263] (-) TimerEvent: {}
+[31.212790] (-) TimerEvent: {}
+[31.313281] (-) TimerEvent: {}
+[31.413889] (-) TimerEvent: {}
+[31.514500] (-) TimerEvent: {}
+[31.615094] (-) TimerEvent: {}
+[31.715599] (-) TimerEvent: {}
+[31.816187] (-) TimerEvent: {}
+[31.916741] (-) TimerEvent: {}
+[32.017343] (-) TimerEvent: {}
+[32.117766] (-) TimerEvent: {}
+[32.218258] (-) TimerEvent: {}
+[32.345032] (-) TimerEvent: {}
+[32.445688] (-) TimerEvent: {}
+[32.546096] (-) TimerEvent: {}
+[32.646555] (-) TimerEvent: {}
+[32.747643] (-) TimerEvent: {}
+[32.848320] (-) TimerEvent: {}
+[32.949264] (-) TimerEvent: {}
+[33.049996] (-) TimerEvent: {}
+[33.150609] (-) TimerEvent: {}
+[33.251487] (-) TimerEvent: {}
+[33.352162] (-) TimerEvent: {}
+[33.453127] (-) TimerEvent: {}
+[33.553811] (-) TimerEvent: {}
+[33.654535] (-) TimerEvent: {}
+[33.755477] (-) TimerEvent: {}
+[33.856387] (-) TimerEvent: {}
+[33.957294] (-) TimerEvent: {}
+[34.058298] (-) TimerEvent: {}
+[34.159098] (-) TimerEvent: {}
+[34.259952] (-) TimerEvent: {}
+[34.360828] (-) TimerEvent: {}
+[34.461418] (-) TimerEvent: {}
+[34.561908] (-) TimerEvent: {}
+[34.662436] (-) TimerEvent: {}
+[34.762988] (-) TimerEvent: {}
+[34.864138] (-) TimerEvent: {}
+[34.964759] (-) TimerEvent: {}
+[35.065353] (-) TimerEvent: {}
+[35.166243] (-) TimerEvent: {}
+[35.266933] (-) TimerEvent: {}
+[35.367541] (-) TimerEvent: {}
+[35.468148] (-) TimerEvent: {}
+[35.568807] (-) TimerEvent: {}
+[35.669471] (-) TimerEvent: {}
+[35.770052] (-) TimerEvent: {}
+[35.870740] (-) TimerEvent: {}
+[35.971459] (-) TimerEvent: {}
+[36.071956] (-) TimerEvent: {}
+[36.172416] (-) TimerEvent: {}
+[36.273106] (-) TimerEvent: {}
+[36.373972] (-) TimerEvent: {}
+[36.474776] (-) TimerEvent: {}
+[36.575549] (-) TimerEvent: {}
+[36.676334] (-) TimerEvent: {}
+[36.776960] (-) TimerEvent: {}
+[36.877518] (-) TimerEvent: {}
+[36.978567] (-) TimerEvent: {}
+[37.079736] (-) TimerEvent: {}
+[37.180419] (-) TimerEvent: {}
+[37.281176] (-) TimerEvent: {}
+[37.382051] (-) TimerEvent: {}
+[37.483062] (-) TimerEvent: {}
+[37.583721] (-) TimerEvent: {}
+[37.684376] (-) TimerEvent: {}
+[37.728399] (drone_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable executor_node\x1b[0m\n'}
+[37.784933] (-) TimerEvent: {}
+[37.885957] (-) TimerEvent: {}
+[37.986803] (-) TimerEvent: {}
+[38.087504] (-) TimerEvent: {}
+[38.188343] (-) TimerEvent: {}
+[38.288899] (-) TimerEvent: {}
+[38.389859] (-) TimerEvent: {}
+[38.491265] (-) TimerEvent: {}
+[38.592598] (-) TimerEvent: {}
+[38.693655] (-) TimerEvent: {}
+[38.794486] (-) TimerEvent: {}
+[38.895408] (-) TimerEvent: {}
+[38.996379] (-) TimerEvent: {}
+[39.097634] (-) TimerEvent: {}
+[39.199386] (-) TimerEvent: {}
+[39.300483] (-) TimerEvent: {}
+[39.401335] (-) TimerEvent: {}
+[39.502046] (-) TimerEvent: {}
+[39.602755] (-) TimerEvent: {}
+[39.703460] (-) TimerEvent: {}
+[39.804245] (-) TimerEvent: {}
+[39.807399] (drone_controller) StdoutLine: {'line': b'[100%] Built target executor_node\n'}
+[39.890917] (drone_controller) CommandEnded: {'returncode': 0}
+[39.905030] (-) TimerEvent: {}
+[39.921161] (drone_controller) JobProgress: {'identifier': 'drone_controller', 'progress': 'install'}
+[39.935877] (drone_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ishank/ros2_ws/build/drone_controller'], 'cwd': '/home/ishank/ros2_ws/build/drone_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ishank'), ('GIT_ASKPASS', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ishank/ros2_ws/install/drone_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{5c06acde-f39c-536b-b565-b468f2913b17}'), ('HOME', '/home/ishank'), ('OLDPWD', '/home/ishank/ros2_ws/src/drone_controller/src'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6ce4f00a-e480-4948-a667-73c2ffeb279c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ishank/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ishank'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/542_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ishank/.vscode-server/bin/7e7950df89d055b5a378379db9ee14290772148a/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Riya/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.11.9-hotspot/bin:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Riya/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Riya/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Riya/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/snap/bin'), ('WT_SESSION', '91406613-f6ac-4ade-95c2-046fae74ebaf'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-238ef1322d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ishank/ros2_ws/build/drone_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ishank/ros2_ws/install/drone_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[39.991463] (drone_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[39.995715] (drone_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[40.001166] (drone_controller) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_controller/lib/drone_controller/executor_node\n'}
+[40.005309] (-) TimerEvent: {}
+[40.043380] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/package_run_dependencies/drone_controller\n'}
+[40.044997] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/parent_prefix_path/drone_controller\n'}
+[40.047598] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.sh\n'}
+[40.049310] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.dsv\n'}
+[40.050256] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.sh\n'}
+[40.051943] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.dsv\n'}
+[40.053326] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.bash\n'}
+[40.055104] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.sh\n'}
+[40.056479] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.zsh\n'}
+[40.057484] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.dsv\n'}
+[40.058337] (drone_controller) StdoutLine: {'line': b'-- Symlinking: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.dsv\n'}
+[40.097762] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/packages/drone_controller\n'}
+[40.099145] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig.cmake\n'}
+[40.100524] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig-version.cmake\n'}
+[40.102148] (drone_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.xml\n'}
+[40.105437] (-) TimerEvent: {}
+[40.112740] (drone_controller) CommandEnded: {'returncode': 0}
+[40.205797] (-) TimerEvent: {}
+[40.303807] (drone_controller) JobEnded: {'identifier': 'drone_controller', 'rc': 0}
+[40.319469] (-) TimerEvent: {}
+[40.319920] (-) EventReactorShutdown: {}

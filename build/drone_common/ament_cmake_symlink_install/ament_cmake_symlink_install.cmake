@@ -315,6 +315,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "include/" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/ishank/ros2_ws/src/drone_common" DIRECTORY "include/" "DESTINATION" "include")
+
 # install(FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_common" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_common" FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_common" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
@@ -350,6 +353,9 @@ ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_common" FILES 
 
 # install(FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_index/share/ament_index/resource_index/packages/drone_common" "DESTINATION" "share/ament_index/resource_index/packages")
 ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_common" FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_index/share/ament_index/resource_index/packages/drone_common" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/drone_common/cmake")
+ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_common" FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/drone_common/cmake")
 
 # install(FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_core/drone_commonConfig.cmake" "/home/ishank/ros2_ws/build/drone_common/ament_cmake_core/drone_commonConfig-version.cmake" "DESTINATION" "share/drone_common/cmake")
 ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_common" FILES "/home/ishank/ros2_ws/build/drone_common/ament_cmake_core/drone_commonConfig.cmake" "/home/ishank/ros2_ws/build/drone_common/ament_cmake_core/drone_commonConfig-version.cmake" "DESTINATION" "share/drone_common/cmake")

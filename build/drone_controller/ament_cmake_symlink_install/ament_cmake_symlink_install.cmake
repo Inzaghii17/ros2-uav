@@ -315,6 +315,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install("TARGETS" "executor_node" "DESTINATION" "lib/drone_controller")
+include("/home/ishank/ros2_ws/build/drone_controller/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/ishank/ros2_ws/build/drone_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_controller" FILES "/home/ishank/ros2_ws/build/drone_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
