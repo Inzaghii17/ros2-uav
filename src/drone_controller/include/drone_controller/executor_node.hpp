@@ -22,6 +22,10 @@ private:
 
     bool targetReached() const;
 
+    void publishDroneState();
+
+    void publishPrimitiveStatus();
+
     void missionCallback(
         const drone_msgs::msg::MissionPlan::SharedPtr msg);
 

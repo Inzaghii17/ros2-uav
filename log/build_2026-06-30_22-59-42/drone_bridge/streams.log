@@ -1,0 +1,21 @@
+[0.090s] Invoking command in '/home/ishank/ros2_ws/build/drone_bridge': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_bridge -- -j8 -l8
+[0.147s] Invoked command in '/home/ishank/ros2_ws/build/drone_bridge' returned '0': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_bridge -- -j8 -l8
+[0.153s] Invoking command in '/home/ishank/ros2_ws/build/drone_bridge': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_bridge
+[0.163s] -- Install configuration: ""
+[0.163s] -- Execute custom install script
+[0.164s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/package_run_dependencies/drone_bridge
+[0.167s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/parent_prefix_path/drone_bridge
+[0.168s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.sh
+[0.171s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.dsv
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.sh
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.dsv
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.bash
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.sh
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.zsh
+[0.172s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.dsv
+[0.173s] -- Symlinking: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.dsv
+[0.179s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/packages/drone_bridge
+[0.179s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig.cmake
+[0.179s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig-version.cmake
+[0.179s] -- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.xml
+[0.182s] Invoked command in '/home/ishank/ros2_ws/build/drone_bridge' returned '0': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_bridge

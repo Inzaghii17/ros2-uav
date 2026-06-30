@@ -80,6 +80,7 @@ void ExecutorNode::timerCallback()
 
     // We'll add movement logic here in M3.3
     interpolateStep();
+    publishDroneState();
 }
 
 
@@ -160,11 +161,14 @@ void ExecutorNode::interpolateStep()
 
         if (current_primitive_index_ >= current_plan_.primitives.size())
         {
-            RCLCPP_INFO(
-                get_logger(),
-                "Mission Complete!");
-
             has_active_mission_ = false;
+        }
+
+        publishPrimitiveStatus();
+
+        if (!has_active_mission_)
+        {
+            RCLCPP_INFO(get_logger(), "Mission Complete!");
             return;
         }
 
@@ -196,4 +200,41 @@ bool ExecutorNode::targetReached() const
     return
         std::abs(current_pose_.position.x - target_pose_.position.x) < epsilon &&
         std::abs(current_pose_.position.y - target_pose_.position.y) < epsilon;
+}
+
+void ExecutorNode::publishDroneState()
+{
+    drone_msgs::msg::DroneState msg;
+
+    msg.drone_name = current_plan_.drone_name;
+
+    msg.pose = current_pose_;
+
+    msg.battery = 100.0;
+
+    msg.moving = has_active_mission_;
+
+    msg.current_primitive_index =
+        current_primitive_index_;
+
+    drone_state_pub_->publish(msg);
+}
+
+void ExecutorNode::publishPrimitiveStatus()
+{
+    drone_msgs::msg::PrimitiveStatus msg;
+
+    msg.drone_name = current_plan_.drone_name;
+
+    msg.mission_id = current_plan_.mission_id;
+
+    msg.current_index = current_primitive_index_;
+
+    msg.total_primitives = current_plan_.primitives.size();
+
+    msg.mission_complete = !has_active_mission_;
+
+    msg.battery_remaining = 100.0;
+
+    primitive_status_pub_->publish(msg);
 }
