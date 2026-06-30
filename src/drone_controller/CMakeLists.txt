@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(drone_msgs REQUIRED)
+find_package(drone_common REQUIRED)
 
 add_executable(executor_node
     src/main.cpp
@@ -23,6 +24,7 @@ target_include_directories(executor_node PUBLIC
 ament_target_dependencies(executor_node
     rclcpp
     drone_msgs
+    drone_common
 )
 
 install(TARGETS

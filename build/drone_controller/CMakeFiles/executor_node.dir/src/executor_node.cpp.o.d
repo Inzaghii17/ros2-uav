@@ -647,4 +647,5 @@ CMakeFiles/executor_node.dir/src/executor_node.cpp.o: \
  /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__struct.hpp \
  /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__builder.hpp \
  /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__traits.hpp \
- /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__type_support.hpp
+ /home/ishank/ros2_ws/install/drone_msgs/include/drone_msgs/drone_msgs/msg/detail/primitive_status__type_support.hpp \
+ /home/ishank/ros2_ws/install/drone_common/include/drone_common/battery_cost.hpp

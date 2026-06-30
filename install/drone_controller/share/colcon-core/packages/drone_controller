@@ -1,1 +1,1 @@
-drone_msgs:geometry_msgs:rclcpp
+drone_common:drone_msgs:geometry_msgs:rclcpp

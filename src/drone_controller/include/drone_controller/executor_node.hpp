@@ -5,6 +5,8 @@
 #include "drone_msgs/msg/mission_plan.hpp"
 #include "drone_msgs/msg/drone_state.hpp"
 #include "drone_msgs/msg/primitive_status.hpp"
+#include "drone_common/battery_cost.hpp"
+
 
 class ExecutorNode : public rclcpp::Node
 {
@@ -25,6 +27,8 @@ private:
     void publishDroneState();
 
     void publishPrimitiveStatus();
+
+    void applyBatteryCost();
 
     void missionCallback(
         const drone_msgs::msg::MissionPlan::SharedPtr msg);
@@ -48,6 +52,8 @@ private:
 
     // Current simulated pose
     geometry_msgs::msg::Pose current_pose_;
+
+    double battery_ = 100.0;
 
     constexpr static double kMoveSpeed = 0.05;
 

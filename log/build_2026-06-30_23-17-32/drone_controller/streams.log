@@ -1,0 +1,20 @@
+[0.078s] Invoking command in '/home/ishank/ros2_ws/build/drone_controller': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_controller -- -j8 -l8
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target executor_node[0m
+[0.178s] [ 33%] [32mBuilding CXX object CMakeFiles/executor_node.dir/src/main.cpp.o[0m
+[0.181s] [ 66%] [32mBuilding CXX object CMakeFiles/executor_node.dir/src/executor_node.cpp.o[0m
+[0.692s] In file included from [01m[K/home/ishank/ros2_ws/src/drone_controller/src/executor_node.cpp:1[m[K:
+[0.692s] [01m[K/home/ishank/ros2_ws/src/drone_controller/include/drone_controller/executor_node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kdrone_common/battery_cost.hpp: No such file or directory
+[0.692s]     8 | #include [01;31m[K"drone_common/battery_cost.hpp"[m[K
+[0.692s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.693s] In file included from [01m[K/home/ishank/ros2_ws/src/drone_controller/src/main.cpp:1[m[K:
+[0.693s] [01m[K/home/ishank/ros2_ws/src/drone_controller/include/drone_controller/executor_node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kdrone_common/battery_cost.hpp: No such file or directory
+[0.693s]     8 | #include [01;31m[K"drone_common/battery_cost.hpp"[m[K
+[0.693s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.693s] compilation terminated.
+[0.693s] compilation terminated.
+[0.695s] gmake[2]: *** [CMakeFiles/executor_node.dir/build.make:76: CMakeFiles/executor_node.dir/src/main.cpp.o] Error 1
+[0.695s] gmake[2]: *** Waiting for unfinished jobs....
+[0.695s] gmake[2]: *** [CMakeFiles/executor_node.dir/build.make:90: CMakeFiles/executor_node.dir/src/executor_node.cpp.o] Error 1
+[0.695s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/executor_node.dir/all] Error 2
+[0.695s] gmake: *** [Makefile:146: all] Error 2
+[0.697s] Invoked command in '/home/ishank/ros2_ws/build/drone_controller' returned '2': CMAKE_PREFIX_PATH=/home/ishank/ros2_ws/install/drone_msgs:/home/ishank/ros2_ws/install/mission_manager:/home/ishank/ros2_ws/install/drone_planner:/home/ishank/ros2_ws/install/drone_common:/home/ishank/ros2_ws/install/drone_sim:/home/ishank/ros2_ws/install/drone_controller:/home/ishank/ros2_ws/install/drone_bridge:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_controller -- -j8 -l8

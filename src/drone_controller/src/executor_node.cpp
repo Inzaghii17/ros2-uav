@@ -157,6 +157,8 @@ void ExecutorNode::interpolateStep()
             "Primitive %zu Complete!",
             current_primitive_index_);
 
+        applyBatteryCost();
+
         current_primitive_index_++;
 
         if (current_primitive_index_ >= current_plan_.primitives.size())
@@ -210,7 +212,7 @@ void ExecutorNode::publishDroneState()
 
     msg.pose = current_pose_;
 
-    msg.battery = 100.0;
+    msg.battery = battery_;
 
     msg.moving = has_active_mission_;
 
@@ -234,7 +236,20 @@ void ExecutorNode::publishPrimitiveStatus()
 
     msg.mission_complete = !has_active_mission_;
 
-    msg.battery_remaining = 100.0;
+    msg.battery_remaining = battery_;
 
     primitive_status_pub_->publish(msg);
+}
+
+void ExecutorNode::applyBatteryCost()
+{
+    double random_draw =
+        static_cast<double>(std::rand()) / RAND_MAX;
+
+    battery_ -= drone_common::battery_cost(random_draw);
+
+    if (battery_ < 0.0)
+    {
+        battery_ = 0.0;
+    }
 }
