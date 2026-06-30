@@ -1,0 +1,15 @@
+/home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/package_run_dependencies/drone_controller
+/home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/parent_prefix_path/drone_controller
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.sh
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.dsv
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.sh
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/path.dsv
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.bash
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.sh
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.zsh
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/local_setup.dsv
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.dsv
+/home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/packages/drone_controller
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig.cmake
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/cmake/drone_controllerConfig-version.cmake
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/package.xml

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e642237b2aefc290adfa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "drone_msgs__py",
+					"jsonFile" : "directory-drone_msgs__py-38cbfa8fd266fb3bc0f4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ishank/ros2_ws/build/drone_msgs/drone_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "drone_msgs__rs",
+					"jsonFile" : "directory-drone_msgs__rs-0502346a07a7fb87d951.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ishank/ros2_ws/build/drone_msgs/drone_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "drone_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_drone_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_drone_msgs_egg-d11af0b4eb7e9ac69667.json",
+					"name" : "ament_cmake_python_build_drone_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_drone_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_drone_msgs-7892093f29c0f6feb6ae.json",
+					"name" : "ament_cmake_python_symlink_drone_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs-15171a981692edc083f7.json",
+					"name" : "drone_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__cpp-2577c002632b54ee25a7.json",
+					"name" : "drone_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "drone_msgs__py::@0f41be3eddd427169228",
+					"jsonFile" : "target-drone_msgs__py-e1c4f302af76446ea850.json",
+					"name" : "drone_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_generator_c-80f470db25519cc88788.json",
+					"name" : "drone_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_generator_py-8898f93b602cb4d943b9.json",
+					"name" : "drone_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_c-4cfa88b67104daa08372.json",
+					"name" : "drone_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_c__pyext-2788687e1ba7faecefbe.json",
+					"name" : "drone_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_cpp-30fef90b376cdc668486.json",
+					"name" : "drone_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_fastrtps_c-abad85080dc2e80cea7e.json",
+					"name" : "drone_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_fastrtps_c__pyext-94da94a249b8fd9b29fd.json",
+					"name" : "drone_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_fastrtps_cpp-527226b425dc8c13c522.json",
+					"name" : "drone_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_introspection_c-625d708bbff15b33ba08.json",
+					"name" : "drone_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_introspection_c__pyext-76c0094535e426f0a373.json",
+					"name" : "drone_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs__rosidl_typesupport_introspection_cpp-26efae5b7f90eb712f57.json",
+					"name" : "drone_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "drone_msgs__rs::@81a7a3154b06a641c767",
+					"jsonFile" : "target-drone_msgs__rs-2ee667f3a8312b0e037c.json",
+					"name" : "drone_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drone_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drone_msgs_uninstall-59be0fe3de580ae6b020.json",
+					"name" : "drone_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-db083fd857c0032bec12.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ishank/ros2_ws/build/drone_msgs",
+		"source" : "/home/ishank/ros2_ws/src/drone_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

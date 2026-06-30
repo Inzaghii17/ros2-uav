@@ -1,0 +1,12 @@
+msg/Battery.idl
+msg/Battery.msg
+msg/DroneState.idl
+msg/DroneState.msg
+msg/Mission.idl
+msg/Mission.msg
+msg/MissionPlan.idl
+msg/MissionPlan.msg
+msg/Primitive.idl
+msg/Primitive.msg
+msg/PrimitiveStatus.idl
+msg/PrimitiveStatus.msg

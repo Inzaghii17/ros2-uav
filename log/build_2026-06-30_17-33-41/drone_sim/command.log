@@ -1,0 +1,6 @@
+Invoking command in '/home/ishank/ros2_ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ishank/ros2_ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishank/ros2_ws/install/drone_sim
+Invoked command in '/home/ishank/ros2_ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ishank/ros2_ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishank/ros2_ws/install/drone_sim
+Invoking command in '/home/ishank/ros2_ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_sim -- -j8 -l8
+Invoked command in '/home/ishank/ros2_ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_sim -- -j8 -l8
+Invoking command in '/home/ishank/ros2_ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_sim
+Invoked command in '/home/ishank/ros2_ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_sim

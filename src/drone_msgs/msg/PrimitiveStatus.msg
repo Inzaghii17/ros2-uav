@@ -1,0 +1,6 @@
+string drone_name
+uint32 mission_id
+uint32 current_index
+uint32 total_primitives
+bool mission_complete
+float64 battery_remaining

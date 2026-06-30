@@ -1,0 +1,1 @@
+/home/ishank/ros2_ws/build/drone_msgs/rosidl_generator_cpp/drone_msgs/msg/detail/primitive_status__traits.hpp

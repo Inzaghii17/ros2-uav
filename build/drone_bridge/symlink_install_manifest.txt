@@ -1,0 +1,15 @@
+/home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/package_run_dependencies/drone_bridge
+/home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/parent_prefix_path/drone_bridge
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.sh
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.dsv
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.sh
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.dsv
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.bash
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.sh
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.zsh
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.dsv
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.dsv
+/home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/packages/drone_bridge
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig.cmake
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig-version.cmake
+/home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.xml

@@ -1,0 +1,4 @@
+string drone_name
+geometry_msgs/Point source
+geometry_msgs/Point destination
+uint32 mission_id

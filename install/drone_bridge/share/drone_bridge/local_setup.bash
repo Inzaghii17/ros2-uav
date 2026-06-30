@@ -1,0 +1,1 @@
+/home/ishank/ros2_ws/build/drone_bridge/ament_cmake_environment_hooks/local_setup.bash

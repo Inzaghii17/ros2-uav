@@ -1,0 +1,5 @@
+uint32 mission_id
+string drone_name
+float64 estimated_cost
+float64 current_battery
+bool mission_possible

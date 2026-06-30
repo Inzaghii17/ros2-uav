@@ -1,0 +1,6 @@
+Invoking command in '/home/ishank/ros2_ws/build/drone_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ishank/ros2_ws/src/drone_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishank/ros2_ws/install/drone_msgs
+Invoked command in '/home/ishank/ros2_ws/build/drone_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ishank/ros2_ws/src/drone_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishank/ros2_ws/install/drone_msgs
+Invoking command in '/home/ishank/ros2_ws/build/drone_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_msgs -- -j8 -l8
+Invoked command in '/home/ishank/ros2_ws/build/drone_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_msgs -- -j8 -l8
+Invoking command in '/home/ishank/ros2_ws/build/drone_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_msgs
+Invoked command in '/home/ishank/ros2_ws/build/drone_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_msgs

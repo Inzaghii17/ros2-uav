@@ -1,0 +1,5 @@
+string drone_name
+geometry_msgs/Pose pose
+float64 battery
+bool moving
+uint32 current_primitive_index
