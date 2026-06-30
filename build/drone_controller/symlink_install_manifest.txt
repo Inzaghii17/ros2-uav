@@ -1,4 +1,5 @@
 /home/ishank/ros2_ws/install/drone_controller/lib/drone_controller/executor_node
+/home/ishank/ros2_ws/install/drone_controller/share/drone_controller/launch/executor.launch.py
 /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/package_run_dependencies/drone_controller
 /home/ishank/ros2_ws/install/drone_controller/share/ament_index/resource_index/parent_prefix_path/drone_controller
 /home/ishank/ros2_ws/install/drone_controller/share/drone_controller/environment/ament_prefix_path.sh
