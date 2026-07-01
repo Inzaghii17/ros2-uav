@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_sim/ament_cmake_environment_hooks/local_setup.zsh

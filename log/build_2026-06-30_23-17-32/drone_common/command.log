@@ -1,4 +1,0 @@
-Invoking command in '/home/ishank/ros2_ws/build/drone_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_common -- -j8 -l8
-Invoked command in '/home/ishank/ros2_ws/build/drone_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ishank/ros2_ws/build/drone_common -- -j8 -l8
-Invoking command in '/home/ishank/ros2_ws/build/drone_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_common
-Invoked command in '/home/ishank/ros2_ws/build/drone_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ishank/ros2_ws/build/drone_common

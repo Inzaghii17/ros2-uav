@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/src/drone_msgs/msg/PrimitiveStatus.msg

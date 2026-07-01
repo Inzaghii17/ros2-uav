@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_controller/ament_cmake_core/drone_controllerConfig.cmake

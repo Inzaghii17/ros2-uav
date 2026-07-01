@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_msgs/rosidl_generator_py/drone_msgs/_drone_msgs_s.ep.rosidl_typesupport_fastrtps_c.c

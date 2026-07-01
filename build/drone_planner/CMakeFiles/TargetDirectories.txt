@@ -1,9 +1,0 @@
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/uninstall.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/drone_planner_uninstall.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/test.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/edit_cache.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/rebuild_cache.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/list_install_components.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/install.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/install/local.dir
-/home/ishank/ros2_ws/build/drone_planner/CMakeFiles/install/strip.dir

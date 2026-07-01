@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_msgs/rosidl_generator_py/drone_msgs/msg/_primitive_status_s.c

@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_msgs/rosidl_typesupport_fastrtps_cpp/drone_msgs/msg/detail/primitive_status__rosidl_typesupport_fastrtps_cpp.hpp

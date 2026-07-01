@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_msgs/rosidl_generator_cpp/drone_msgs/msg/detail/mission_plan__struct.hpp

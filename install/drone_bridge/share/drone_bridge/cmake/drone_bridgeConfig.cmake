@@ -1,1 +1,0 @@
-/home/ishank/ros2_ws/build/drone_bridge/ament_cmake_core/drone_bridgeConfig.cmake
