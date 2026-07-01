@@ -1,5 +1,6 @@
 /home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/uninstall.dir
 /home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/drone_bridge_uninstall.dir
+/home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/gazebo_bridge_node.dir
 /home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/test.dir
 /home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/edit_cache.dir
 /home/ishank/ros2_ws/build/drone_bridge/CMakeFiles/rebuild_cache.dir

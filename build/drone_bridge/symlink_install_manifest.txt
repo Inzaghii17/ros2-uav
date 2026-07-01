@@ -1,3 +1,5 @@
+/home/ishank/ros2_ws/install/drone_bridge/lib/drone_bridge/gazebo_bridge_node
+/home/ishank/ros2_ws/install/drone_bridge/include/drone_bridge/gazebo_bridge_node.hpp
 /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/package_run_dependencies/drone_bridge
 /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/parent_prefix_path/drone_bridge
 /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.sh

@@ -197,6 +197,67 @@ drone_bridge_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drone_bridge_uninstall.dir/build.make CMakeFiles/drone_bridge_uninstall.dir/build
 .PHONY : drone_bridge_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named gazebo_bridge_node
+
+# Build rule for target.
+gazebo_bridge_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gazebo_bridge_node
+.PHONY : gazebo_bridge_node
+
+# fast build rule for target.
+gazebo_bridge_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/build
+.PHONY : gazebo_bridge_node/fast
+
+src/gazebo_bridge_node.o: src/gazebo_bridge_node.cpp.o
+.PHONY : src/gazebo_bridge_node.o
+
+# target to build an object file
+src/gazebo_bridge_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/gazebo_bridge_node.cpp.o
+.PHONY : src/gazebo_bridge_node.cpp.o
+
+src/gazebo_bridge_node.i: src/gazebo_bridge_node.cpp.i
+.PHONY : src/gazebo_bridge_node.i
+
+# target to preprocess a source file
+src/gazebo_bridge_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/gazebo_bridge_node.cpp.i
+.PHONY : src/gazebo_bridge_node.cpp.i
+
+src/gazebo_bridge_node.s: src/gazebo_bridge_node.cpp.s
+.PHONY : src/gazebo_bridge_node.s
+
+# target to generate assembly for a file
+src/gazebo_bridge_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/gazebo_bridge_node.cpp.s
+.PHONY : src/gazebo_bridge_node.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_bridge_node.dir/build.make CMakeFiles/gazebo_bridge_node.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +273,13 @@ help:
 	@echo "... test"
 	@echo "... drone_bridge_uninstall"
 	@echo "... uninstall"
+	@echo "... gazebo_bridge_node"
+	@echo "... src/gazebo_bridge_node.o"
+	@echo "... src/gazebo_bridge_node.i"
+	@echo "... src/gazebo_bridge_node.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

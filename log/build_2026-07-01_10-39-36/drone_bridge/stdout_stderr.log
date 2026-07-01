@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target gazebo_bridge_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/gazebo_bridge_node.dir/src/gazebo_bridge_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/gazebo_bridge_node.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gazebo_bridge_node[0m
+[100%] Built target gazebo_bridge_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/lib/drone_bridge/gazebo_bridge_node
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/include/drone_bridge/gazebo_bridge_node.hpp
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/package_run_dependencies/drone_bridge
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/parent_prefix_path/drone_bridge
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.sh
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/environment/path.dsv
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.bash
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.sh
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.zsh
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/local_setup.dsv
+-- Symlinking: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.dsv
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/ament_index/resource_index/packages/drone_bridge
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig.cmake
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/cmake/drone_bridgeConfig-version.cmake
+-- Up-to-date symlink: /home/ishank/ros2_ws/install/drone_bridge/share/drone_bridge/package.xml

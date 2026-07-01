@@ -315,6 +315,12 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install("TARGETS" "gazebo_bridge_node" "DESTINATION" "lib/drone_bridge")
+include("/home/ishank/ros2_ws/build/drone_bridge/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "include/" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/ishank/ros2_ws/src/drone_bridge" DIRECTORY "include/" "DESTINATION" "include")
+
 # install(FILES "/home/ishank/ros2_ws/build/drone_bridge/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_bridge" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ishank/ros2_ws/src/drone_bridge" FILES "/home/ishank/ros2_ws/build/drone_bridge/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/drone_bridge" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
