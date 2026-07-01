@@ -23,6 +23,7 @@ ament_target_dependencies(
     gazebo_bridge_node
     rclcpp
     drone_msgs
+    geometry_msgs
 )
 
 install(

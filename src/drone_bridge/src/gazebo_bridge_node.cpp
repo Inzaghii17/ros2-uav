@@ -25,6 +25,16 @@ GazeboBridgeNode::GazeboBridgeNode()
                 this,
                 _1));
 
+    drone_blue_pose_pub_ =
+        create_publisher<geometry_msgs::msg::Pose>(
+            "/drone_blue/bridge_pose",
+            10);
+
+    drone_green_pose_pub_ =
+        create_publisher<geometry_msgs::msg::Pose>(
+            "/drone_green/bridge_pose",
+            10);
+
     RCLCPP_INFO(get_logger(), "Gazebo Bridge Node Started");
 }
 
@@ -47,6 +57,17 @@ void GazeboBridgeNode::droneStateCallback(
         msg->moving ? "true" : "false",
         msg->current_primitive_index
     );
+
+    geometry_msgs::msg::Pose pose = msg->pose;
+
+    if (msg->drone_name == "drone_blue")
+    {
+        drone_blue_pose_pub_->publish(pose);
+    }
+    else if (msg->drone_name == "drone_green")
+    {
+        drone_green_pose_pub_->publish(pose);
+    }
 }
 
 
