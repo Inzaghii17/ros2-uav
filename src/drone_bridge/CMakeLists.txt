@@ -13,6 +13,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(drone_msgs REQUIRED)
+find_package(ros_gz_interfaces REQUIRED)
 
 add_executable(gazebo_bridge_node
     src/main.cpp
@@ -24,6 +25,7 @@ ament_target_dependencies(
     rclcpp
     drone_msgs
     geometry_msgs
+    ros_gz_interfaces
 )
 
 install(
