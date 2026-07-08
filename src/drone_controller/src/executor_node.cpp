@@ -1,12 +1,12 @@
 #include "drone_controller/executor_node.hpp"
+
 #include <cmath>
+
 using std::placeholders::_1;
 
 ExecutorNode::ExecutorNode()
 : Node("executor_node")
-{   
-
-
+{
     current_pose_.position.x = 0.0;
     current_pose_.position.y = 0.0;
     current_pose_.position.z = 0.0;
@@ -17,9 +17,10 @@ ExecutorNode::ExecutorNode()
         create_subscription<drone_msgs::msg::MissionPlan>(
             "mission_plan",
             10,
-            std::bind(&ExecutorNode::missionCallback,
-                      this,
-                      _1));
+            std::bind(
+                &ExecutorNode::missionCallback,
+                this,
+                _1));
 
     drone_state_pub_ =
         create_publisher<drone_msgs::msg::DroneState>(
@@ -34,37 +35,40 @@ ExecutorNode::ExecutorNode()
     timer_ =
         create_wall_timer(
             std::chrono::milliseconds(33),
-            std::bind(&ExecutorNode::timerCallback,
-                      this));
+            std::bind(
+                &ExecutorNode::timerCallback,
+                this));
 
-    RCLCPP_INFO(get_logger(),
-                "Executor Node Started");
+    RCLCPP_INFO(
+        get_logger(),
+        "Executor Node Started");
 }
 
 void ExecutorNode::missionCallback(
     const drone_msgs::msg::MissionPlan::SharedPtr msg)
-{   
-
-    // Store the received mission
+{
     current_plan_ = *msg;
 
-    // Mark that we now have an active mission
     has_active_mission_ = true;
 
-    RCLCPP_INFO(get_logger(),
-                "========== Mission Received ==========");
+    RCLCPP_INFO(
+        get_logger(),
+        "========== Mission Received ==========");
 
-    RCLCPP_INFO(get_logger(),
-                "Drone: %s",
-                current_plan_.drone_name.c_str());
+    RCLCPP_INFO(
+        get_logger(),
+        "Drone: %s",
+        current_plan_.drone_name.c_str());
 
-    RCLCPP_INFO(get_logger(),
-                "Mission ID: %u",
-                current_plan_.mission_id);
+    RCLCPP_INFO(
+        get_logger(),
+        "Mission ID: %u",
+        current_plan_.mission_id);
 
-    RCLCPP_INFO(get_logger(),
-                "Total Primitives: %zu",
-                current_plan_.primitives.size());
+    RCLCPP_INFO(
+        get_logger(),
+        "Total Primitives: %zu",
+        current_plan_.primitives.size());
 
     current_primitive_index_ = 0;
 
@@ -78,11 +82,10 @@ void ExecutorNode::timerCallback()
         return;
     }
 
-    // We'll add movement logic here in M3.3
     interpolateStep();
+
     publishDroneState();
 }
-
 
 void ExecutorNode::computeNextTarget()
 {
@@ -91,10 +94,10 @@ void ExecutorNode::computeNextTarget()
         return;
     }
 
-    // Start from the current pose
     target_pose_ = current_pose_;
 
-    const auto &primitive = current_plan_.primitives[current_primitive_index_];
+    const auto &primitive =
+        current_plan_.primitives[current_primitive_index_];
 
     switch (primitive.type)
     {
@@ -134,22 +137,30 @@ void ExecutorNode::computeNextTarget()
             target_pose_.position.y -= primitive.step_distance;
             break;
 
+        case drone_msgs::msg::Primitive::UP:
+            target_pose_.position.z += primitive.step_distance;
+            break;
+
+        case drone_msgs::msg::Primitive::DOWN:
+            target_pose_.position.z -= primitive.step_distance;
+            break;
+
         case drone_msgs::msg::Primitive::HOVER:
             break;
     }
 
     RCLCPP_INFO(
         get_logger(),
-        "Target Pose -> (%.2f, %.2f)",
+        "Target Pose -> (%.2f, %.2f, %.2f)",
         target_pose_.position.x,
-        target_pose_.position.y);
+        target_pose_.position.y,
+        target_pose_.position.z);
 }
 
 void ExecutorNode::interpolateStep()
 {
     if (targetReached())
     {
-        // Snap exactly to the target
         current_pose_ = target_pose_;
 
         RCLCPP_INFO(
@@ -158,6 +169,11 @@ void ExecutorNode::interpolateStep()
             current_primitive_index_);
 
         applyBatteryCost();
+
+        if (!has_active_mission_)
+        {
+            return;
+        }
 
         current_primitive_index_++;
 
@@ -170,29 +186,51 @@ void ExecutorNode::interpolateStep()
 
         if (!has_active_mission_)
         {
-            RCLCPP_INFO(get_logger(), "Mission Complete!");
+            RCLCPP_INFO(
+                get_logger(),
+                "Mission Complete!");
+
             return;
         }
 
         computeNextTarget();
+
         return;
     }
+
+    //-------------------------------
+    // X
+    //-------------------------------
 
     if (current_pose_.position.x < target_pose_.position.x)
         current_pose_.position.x += kMoveSpeed;
     else if (current_pose_.position.x > target_pose_.position.x)
         current_pose_.position.x -= kMoveSpeed;
 
+    //-------------------------------
+    // Y
+    //-------------------------------
+
     if (current_pose_.position.y < target_pose_.position.y)
         current_pose_.position.y += kMoveSpeed;
     else if (current_pose_.position.y > target_pose_.position.y)
         current_pose_.position.y -= kMoveSpeed;
 
+    //-------------------------------
+    // Z
+    //-------------------------------
+
+    if (current_pose_.position.z < target_pose_.position.z)
+        current_pose_.position.z += kMoveSpeed;
+    else if (current_pose_.position.z > target_pose_.position.z)
+        current_pose_.position.z -= kMoveSpeed;
+
     RCLCPP_INFO(
         get_logger(),
-        "Current Pose -> (%.2f, %.2f)",
+        "Current Pose -> (%.2f, %.2f, %.2f)",
         current_pose_.position.x,
-        current_pose_.position.y);
+        current_pose_.position.y,
+        current_pose_.position.z);
 }
 
 bool ExecutorNode::targetReached() const
@@ -201,7 +239,8 @@ bool ExecutorNode::targetReached() const
 
     return
         std::abs(current_pose_.position.x - target_pose_.position.x) < epsilon &&
-        std::abs(current_pose_.position.y - target_pose_.position.y) < epsilon;
+        std::abs(current_pose_.position.y - target_pose_.position.y) < epsilon &&
+        std::abs(current_pose_.position.z - target_pose_.position.z) < epsilon;
 }
 
 void ExecutorNode::publishDroneState()
@@ -232,24 +271,69 @@ void ExecutorNode::publishPrimitiveStatus()
 
     msg.current_index = current_primitive_index_;
 
-    msg.total_primitives = current_plan_.primitives.size();
+    msg.total_primitives =
+        current_plan_.primitives.size();
 
-    msg.mission_complete = !has_active_mission_;
+    msg.mission_complete =
+        !has_active_mission_;
 
-    msg.battery_remaining = battery_;
+    msg.battery_remaining =
+        battery_;
 
     primitive_status_pub_->publish(msg);
 }
 
 void ExecutorNode::applyBatteryCost()
 {
+    const auto &primitive =
+        current_plan_.primitives[current_primitive_index_];
+
     double random_draw =
         static_cast<double>(std::rand()) / RAND_MAX;
 
-    battery_ -= drone_common::battery_cost(random_draw);
+    double cost =
+        drone_common::battery_cost(
+            primitive.type,
+            random_draw);
 
-    if (battery_ < 0.0)
+    RCLCPP_INFO(
+        get_logger(),
+        "Primitive Cost : %.2f",
+        cost);
+
+    //---------------------------------------
+    // Check battery before deducting
+    //---------------------------------------
+
+    if (battery_ < cost)
     {
+        RCLCPP_ERROR(
+            get_logger(),
+            "Mission Failed! Insufficient Battery.");
+
+        RCLCPP_ERROR(
+            get_logger(),
+            "Battery Remaining : %.2f  Required : %.2f",
+            battery_,
+            cost);
+
         battery_ = 0.0;
+
+        has_active_mission_ = false;
+
+        publishPrimitiveStatus();
+
+        return;
     }
+
+    //---------------------------------------
+    // Consume battery
+    //---------------------------------------
+
+    battery_ -= cost;
+
+    RCLCPP_INFO(
+        get_logger(),
+        "Remaining Battery : %.2f",
+        battery_);
 }

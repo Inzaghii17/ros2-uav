@@ -1,21 +1,59 @@
 #pragma once
 
+#include "drone_msgs/msg/primitive.hpp"
+
 namespace drone_common
 {
 
-// Static battery cost per primitive
-constexpr double kChargePerUnitDistance = 2.0;
+//-------------------------------------
+// Initial Battery
+//-------------------------------------
 
-// Actual battery consumed during execution
-inline double battery_cost(double random_draw)
+constexpr double kInitialBattery = 100.0;
+
+//-------------------------------------
+// Base Costs
+//-------------------------------------
+
+inline double base_cost(uint8_t primitive)
 {
-    return kChargePerUnitDistance * random_draw;
+    switch (primitive)
+    {
+        case drone_msgs::msg::Primitive::HOVER:
+            return 1.0;
+
+        case drone_msgs::msg::Primitive::N:
+        case drone_msgs::msg::Primitive::S:
+        case drone_msgs::msg::Primitive::E:
+        case drone_msgs::msg::Primitive::W:
+            return 2.0;
+
+        case drone_msgs::msg::Primitive::NE:
+        case drone_msgs::msg::Primitive::NW:
+        case drone_msgs::msg::Primitive::SE:
+        case drone_msgs::msg::Primitive::SW:
+            return 2.8;
+
+        case drone_msgs::msg::Primitive::UP:
+            return 4.0;
+
+        case drone_msgs::msg::Primitive::DOWN:
+            return 1.5;
+
+        default:
+            return 2.0;
+    }
 }
 
-// Expected value used by Mission Manager
-inline double expected_battery_cost()
+//-------------------------------------
+// Actual Runtime Cost
+//-------------------------------------
+
+inline double battery_cost(
+    uint8_t primitive,
+    double random_draw)
 {
-    return kChargePerUnitDistance * 0.5;
+    return base_cost(primitive) * (0.5 + random_draw);
 }
 
 } // namespace drone_common

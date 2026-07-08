@@ -9,6 +9,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(drone_msgs REQUIRED)
+find_package(drone_common REQUIRED)
 
 add_executable(planner_node
     src/main.cpp
@@ -24,6 +25,7 @@ ament_target_dependencies(
     rclcpp
     geometry_msgs
     drone_msgs
+    drone_common
 )
 
 install(

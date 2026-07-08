@@ -8,5 +8,8 @@ uint8 SW=6
 uint8 W=7
 uint8 NW=8
 
+uint8 UP=9
+uint8 DOWN=10
+
 uint8 type
 float64 step_distance
