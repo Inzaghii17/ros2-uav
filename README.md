@@ -608,15 +608,6 @@ Zero changes to any message type, Planner, or Bridge.
 
 ---
 
-## 👥 Authors
-
-| Name | 
-|---|---|
-| Ishank Choudhary | 
-| Nehal | 
-
----
-
 ## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
