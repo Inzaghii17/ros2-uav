@@ -610,9 +610,10 @@ Zero changes to any message type, Planner, or Bridge.
 
 ## 👥 Authors
 
-| Name | Branch |
+| Name | 
 |---|---|
-| Nehal | `week2/nehal` |
+| Ishank Choudhary | 
+| Nehal | 
 
 ---
 
